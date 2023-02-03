@@ -1,0 +1,94 @@
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+    }
+    
+    
+    body{
+        width: 100vw;
+        background-color: rgb(0, 0, 0);
+    }
+
+    main{
+        height: 100vh;
+        width: 100vw;
+        background-color: #242323;
+    }
+    nav{
+        padding: 15px;
+        width: 100vw;
+        background-color:#242323;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav h1{
+        color: white;
+    }
+
+    form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form input{
+        padding: 10px 30px;
+        border-radius: 15px;
+        border: 2px solid rgb(0, 0, 0);
+    }
+
+    form input[type = "submit"]{
+        background-color: rgb(245, 248, 251);
+    }
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cardContent {
+        border: 1px solid black;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 900px;
+        max-height: 1000px;
+        border-radius: 20px;
+        margin: 10px;
+        cursor: pointer;
+        text-align: center;
+        padding: 10px;
+       
+        
+      }
+      .cardContent:hover{
+        transition: 0.1s;
+        transform: scale(1.01);
+
+      }
+      .cardContent img {
+        margin-top: 10px;
+        width: 80%;
+       
+    
+        border-radius: 5px;
+        box-shadow: -3px 3px 10px 3px #242323;
+      }
+      .cardContent p {
+        min-height: 200px;
+        margin-top: 20px;
+        width: 100%;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 7;
+        overflow: hidden;
+      }
+      .cardContent h2{
+        margin-top: 20px;
+      }

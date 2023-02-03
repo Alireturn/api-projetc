@@ -1,0 +1,19 @@
+{
+  "name": "electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Ali Benyamina",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^22.2.0"
+  },
+  "dependencies": {
+    "elctron": "^0.0.1-security",
+    "reload": "^3.2.1"
+  }
+}
