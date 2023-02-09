@@ -8,25 +8,22 @@
     
     body{
         width: 100vw;
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(2,0,36);
     }
 
-    main{
-        height: 100vh;
-        width: 100vw;
-        background-color: #242323;
-    }
+   
     nav{
         padding: 15px;
         width: 100vw;
-        background-color:#242323;
+        background-color:rgb(2,0,36);
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
+        border-bottom: 2px solid rgb(42, 54, 104);
     }
 
     nav h1{
-        color: white;
+        color: #3FBDB0;
     }
 
     form{
@@ -37,58 +34,283 @@
 
     form input{
         padding: 10px 30px;
-        border-radius: 15px;
-        border: 2px solid rgb(0, 0, 0);
+        border-radius: 20px;
+        border: 1px solid rgb(0, 0, 0);
     }
 
     form input[type = "submit"]{
         background-color: rgb(245, 248, 251);
     }
+    form input{
+        outline:0;
+    background-color: white;
+    }
+    
 
-    ul{
+   
+
+                    /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+
+       ul{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    }
-    .cardContent {
-        border: 1px solid black;
-        width: 300px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-height: 900px;
-        max-height: 1000px;
-        border-radius: 20px;
-        margin: 10px;
-        cursor: pointer;
-        text-align: center;
-        padding: 10px;
-       
-        
-      }
-      .cardContent:hover{
-        transition: 0.1s;
-        transform: scale(1.01);
+       }
 
-      }
-      .cardContent img {
-        margin-top: 10px;
-        width: 80%;
-       
-    
-        border-radius: 5px;
-        box-shadow: -3px 3px 10px 3px #242323;
-      }
-      .cardContent p {
-        min-height: 200px;
-        margin-top: 20px;
-        width: 100%;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 7;
+
+    .cardContent {
+        width: 300px;
+        margin: 1rem;
+        border-radius: 20px;
+        background-color: rgb(25 26 35);
+        position:relative;
         overflow: hidden;
+        /* overflow: hidden;  */
       }
-      .cardContent h2{
-        margin-top: 20px;
+      
+
+
+.overview{
+    color: black;
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: #fff;
+    padding: 1rem;
+    max-height: 100%;
+    transform:translateY(101%);
+    transition:transform 0.3s ease-in;
+}
+
+.cardContent:hover .overview{
+    transform:translateY(0)
+}
+      
+
+      .cardContent:hover{
+        box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.42);
+        transition: 0.4s;
+        transform: scale(1.01);
       }
+
+      .cardContent img {
+        width:100%;
+        max-height: 80%;
+      }
+
+.infos{
+
+    color:#eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+
+ }
+
+ .infos p {
+    margin-left: 10px;
+  background-color: rgb(0, 0, 0);  
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  
+
+ }
+
+.infos h2{
+        font-size: 18px;
+        width: 50%;
+        margin-top: 0;
+        color: white;
+}
+
+.overview{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: #fff;
+    padding: 1rem;
+    max-height: 100%;
+    transform:translateY(101%);
+    transition:transform 0.3s ease-in;
+}
+
+
+.cardInfo img{
+    width: 10%;
+}
+    
+
+
+
+
+
+.infosStream h2{
+    font-size: 18px;
+    color: #fff;
+}
+
+
+.containerLouer{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 180px;
+    margin-top: 50px;
+}
+
+.containerLouer img{
+    width: 40px;
+}
+
+.containerLouer li{
+    
+    margin: 15px;
+}
+
+.containerLouer li img{
+    
+   margin: 0 auto;
+}
+
+.containerAchat{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    
+}
+
+.containerAchat li{
+    margin: 15px;
+
+}
+
+.containerAchat img{
+    width: 40px;
+
+}
+
+
+h3{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-family:*;
+}
+
+
+.container {
+    width: 300px;
+    margin: 1rem;
+    border-radius: 20px;
+    background-color: rgb(25 26 35);
+    position:relative;
+    overflow: hidden;
+}
+
+.container img {
+    width:100%;
+    max-height: 80%;
+  }
+
+.container:hover{
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.42);
+    transition: 0.4s;
+    transform: scale(1.01);
+  }
+
+
+
+
+
+
+
+ .infoAll{
+  background-color: #0d1122;
+  display: flex;
+  position: relative;
+  padding: 20px;
+ }
+
+ .infoAll img{
+   
+    width: 300px;
+    border-radius: 10px;
+ }
+
+ .infoAll h2{
+    text-align: center;
+ }
+
+  #moviesInfo h2{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .infoAll p {
+    color: rgb(255, 255, 255);
+    /* background-color: #3FBDB0; */
+    width:  100%;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 30px;
+    
+  }
+
+  .infoAll h4{
+    position: absolute;
+    top: 380px;
+    right: 980px;
+    font-size: 20px;
+    color: rgb(248, 248, 248);
+  }
+
+  .infoAll h3{
+    position: absolute;
+    top: 300px;
+    right: 980px;
+    font-size: 20px;
+    color: rgb(112, 187, 156);
+  }
+
+
+  #similarMovie{
+    margin-top: 10px;
+   margin-left: 40px;
+  }
+  #similarMovie img{
+    width: 120px; 
+    margin: 10px;
+    border-radius: 10px;
+ }
+
+
+ #similarMovie{
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ #similarMovie p {
+    color: aliceblue;
+    
+ }
+
+ .containerSimilar  {
+   
+
+ }
+
+ .caca{
+   
+ }

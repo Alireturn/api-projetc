@@ -1,3 +1,12 @@
 8111705f6e396ba3cd2e501a17915090
 
 https://api.themoviedb.org/3/search/movie?api_key=8111705f6e396ba3cd2e501a17915090&query=Jack+Reacher
+
+
+
+https://api.themoviedb.org/3/watch/providers/regions?api_key=8111705f6e396ba3cd2e501a17915090&language=en-US
+
+
+
+
+https://api.themoviedb.org/3/movie/299536/watch/providers?api_key=8111705f6e396ba3cd2e501a17915090
