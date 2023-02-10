@@ -7,22 +7,48 @@ const btn                = document.querySelector('#btn');
 const card               = document.querySelector('.cardContent');
 const cardNext           = document.getElementById('effacer')
 const resultNextMovies   = document.getElementById('next');
-console.log(card);
+const tendance   = document.getElementById('tendances');
 
-let search   = "";
-let movies   = []; 
-let next     = [];
-let id       = 0;
-let aaaa     = [];
-let pageNext = 2;
+
+let search       = "";
+let movies       = []; 
+let next         = [];
+let id           = 0;
+let aaaa         = [];
+let pageNext     = 2;
 let videosMovies = [];
+let popular = [];
 
+
+const popularMovie = async () =>{
+  popular = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=8111705f6e396ba3cd2e501a17915090&language=fr-FR&page=1`).then((res) => res.json());
+  console.log(popular)
+  result.innerHTML = popular.results.map((nex) => 
+
+  `    
+    <li>
+    <a href="page-contenue.html?id=${nex.id}">
+    <div class="cardContent">
+      <img src="https://image.tmdb.org/t/p/w500${nex.poster_path}"></img>
+      <div class="infos">
+      <h2>${nex.original_title}</h2>
+        <p>Anneé : ${nex.release_date}</p> 
+      </div>
+    </div>
+    </a>
+  </li>
+ `
+).join("");
+
+};
 
 
 
 const fetchNext = async () =>{
   next = await fetch(`https://api.themoviedb.org/3/movie/upcoming?api_key=8111705f6e396ba3cd2e501a17915090&language=fr-FR&page=${pageNext}`).then((res) => res.json());
   console.log(next)
+
+  
 };
 
 const nexFilm = async () => {
@@ -79,8 +105,10 @@ const filmCarte = async () => {
     
   };
 
-
-
+  tendance.addEventListener('click', () => {
+    popularMovie();
+    cardNext.style.display="none";
+  });
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
