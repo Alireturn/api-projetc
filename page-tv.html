@@ -1,16 +1,13 @@
-
-<!--index.html-->
-
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <title>Hello World!</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    
-  </head>
-  <body>
+</head>
+<body>
     <nav>
         <a href="index.html"><h1>what watch</h1></a>
         <div class="choiseMovie">
@@ -18,7 +15,9 @@
           <a href="page-tv.html">
             <li id="tendances">tv shows</li>
           </a>
-          <li>movie</li>
+          <a href="./index.html">
+              <li>movie</li>
+          </a>
           <li>Upcoming</li>
         </ul>
         </div>
@@ -28,28 +27,15 @@
         </form>
     </nav>
 
-  
-
-
     <div class="result-container">
+        <h3 id="titlePopular">Films populaire</h3>
         <ul id ="result">
  
         </ul>
-         
-
-    
-    <div id="effacer">
-      <h3>Films recent ou prochains film a venir </h3>
-      <ul id ="next">
-          <div class="container">
-
-          </div>
-      </ul>
-
-      
     </div>
-  
 
-    <script src="./index.js"></script>
-  </body>
+
+
+  <script src="./page-tv.js"></script>
+</body>
 </html>

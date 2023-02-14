@@ -3,6 +3,8 @@
 // Modules to control application life and create native browser window
 const { app, BrowserWindow } = require('electron')
 const path = require('path')
+// if(require('electron-squirrel-startup')) return;
+// require('update-electron-app')()
 
 
 const createWindow = () => {
@@ -11,7 +13,7 @@ const createWindow = () => {
     width: 800,
     height: 600,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
+      reload: path.join(__dirname, 'preload.js')
     }
   })
 
